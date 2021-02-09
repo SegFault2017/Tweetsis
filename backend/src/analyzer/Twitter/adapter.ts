@@ -1,6 +1,6 @@
 import axios, { AxiosInstance, AxiosResponse } from "axios";
 import { ITwitterResponse } from "./Interface";
-import * as VError from "verror";
+import VError from "verror";
 
 class TwitterAdapter {
     private basedURL = process.env.TWITTER_API_BASED_URL!
@@ -10,7 +10,7 @@ class TwitterAdapter {
         this.axiosInstance = axios.create({
             baseURL: this.basedURL,
             headers: {
-                Authorization: `Bearer ${process.env.bearer_token}`
+                Authorization: `Bearer ${process.env.BEAR_TOKEN!}`
             }
         });
     }
@@ -49,32 +49,39 @@ class TwitterAdapter {
                         profile_name: userProfileName,
                         url: userProfileImgUrl,
                     }
-                }
+                };
             } catch (error) {
-                throw new VError({
-                    casue: error,
-                },
-                error.message)
+                throw new VError(
+                    {
+                      cause: error,
+                    },
+                    "Failed to retrieve contents from twitter respons."
+                  );
             }
 
-)
-
-
         } else {
-            throw new Error("Not a valid tweet id for such twitter response.")
+            throw new Error("Not a valid tweet id for such twitter response.");
         }
     }
     async retrieveContent(tweetId: string): Promise<ITwitterResponse>{
         
         const formattedTweet = this.buildURLFor(tweetId);
         console.log(`URL for Twitter Request: ${formattedTweet}`);
-        const responseFromTwitter = await this.axiosInstance.get(formattedTweet);
-        console.log("Response from Twitter:\n");
-        console.log(responseFromTwitter.data);
-        const payload = await this.parse(responseFromTwitter);
-        console.log("Response for Google NLP API:\n");
-        console.log(payload);
-        return payload;
+        try {
+            const responseFromTwitter = await this.axiosInstance.get(formattedTweet);
+            console.log("Response from Twitter:\n");
+            console.log(responseFromTwitter.data);
+            const payload = await this.parse(responseFromTwitter);
+            console.log("Response for Google NLP API:\n");
+            console.log(payload);
+            return payload;
+        } catch (error) {
+            throw new VError({
+                cause: error
+            },
+                "Failed to retrieve content from twitter id.");
+        }
+       
     }
 
     
