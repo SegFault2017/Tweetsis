@@ -33,9 +33,9 @@ class TwitterAdapter {
                 const tweetText = twitterJson.data[0].text;
                 const tweetID = twitterJson.data[0].id;
                 const tweetCreatedAtTime = twitterJson.data[0].created_at;
-                const userProfileName = twitterJson.data[0].username;
-                const userActualName = twitterJson.data[0].name;
-                const userProfileImgUrl = twitterJson.data[0].profile_image_url;
+                const userProfileName = twitterJson.includes.users[0].username;
+                const userActualName = twitterJson.includes.users[0].name;
+                const userProfileImgUrl = twitterJson.includes.users[0].profile_image_url;
                 
                 console.log(tweetID, tweetText);
                 return {
@@ -63,6 +63,11 @@ class TwitterAdapter {
             throw new Error("Not a valid tweet id for such twitter response.");
         }
     }
+
+    public isError4(payload: ITwitterResponse): boolean{
+		return typeof payload === "object" && payload !== null;
+    }
+    
     async retrieveContent(tweetId: string): Promise<ITwitterResponse>{
         
         const formattedTweet = this.buildURLFor(tweetId);
