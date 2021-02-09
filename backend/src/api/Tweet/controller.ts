@@ -1,6 +1,7 @@
 import autoBind from "auto-bind";
 import { NextFunction, Request, Response } from "express";
-import TwitterAdapter from "./../../ScocialMedia/Twitter";
+import Twitter from "../../providers/Twitter/adapter";
+
 class TweetController{
 	constructor() {
 		autoBind(this);
