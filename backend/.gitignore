@@ -4,4 +4,3 @@ node_modules
 tsconfig.json
 tweet_nlp.json
 dist
-hello.js
