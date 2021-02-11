@@ -137,9 +137,9 @@ const MainCard = (props) => {
           tweet: Yup.string()
             .matches(
               /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/,
-              "Enter a Tweet URL"
+              "Pleases enter a Tweet URL"
             )
-            .required("Enter a Tweet URL"),
+            .required("Please enter a Tweet URL"),
         })}
         onSubmit={(values, actions) => {
           console.log(values.tweet);

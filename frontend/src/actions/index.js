@@ -14,7 +14,6 @@ export const getSentimentData = (tweetUid) => async (dispatch) => {
     dispatch({ type: SET_LOADING, payload: true });
     let sentenceCounter = 0;
     const res = await axios.post(`/analyze/twitter/${tweetUid}`);
-     //post request to analyze sentiment backend
     dispatch({ type: ADD_AUTHOR, payload: res.data.twitter.user });
 
     dispatch({ type: ADD_DOCUMENT, payload: res.data });
@@ -38,11 +37,10 @@ export const getSentimentData = (tweetUid) => async (dispatch) => {
     });
     dispatch({ type: SET_LOADING, payload: false });
   } catch (err) {
+    debugger;
     console.log(err);
     dispatch({ type: SET_LOADING, payload: false });
-    window.alert(
-      "tweet Link incorect, improperly formatted, or from a private account"
-    );
+    window.alert("Something wrong with the twitter link");
   }
 };
 

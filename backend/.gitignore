@@ -4,3 +4,4 @@ node_modules
 tsconfig.json
 tweet_nlp.json
 dist
+TweetsisBE.code-workspace

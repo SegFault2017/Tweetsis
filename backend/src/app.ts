@@ -32,7 +32,7 @@ class App{
   }
 
   public createServer() {
-  	const port = process.env.PORT || 8000;
+  	const port = process.env.PORT || 8080;
   	this.app.listen(port, () => {
   		console.log(`Server starting, Listening at http://localhost:${port}`);
   	});
