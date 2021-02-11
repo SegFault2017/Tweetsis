@@ -16,7 +16,7 @@ class TwitterController{
 	
 
 	async getTweet(req: Request, res: Response, next: NextFunction): Promise<void>{
-		
+		const result = {};
 		const tweetIdLength = req.params.id.length;
 		if (tweetIdLength != 19) {
 			res.status(400).json({
@@ -29,12 +29,12 @@ class TwitterController{
 				const googlePayload = await Twitter.retrieveContent(tweetId);
 				console.log("This is google payload!!!");
 				console.log(googlePayload);
-
 				const sentimentInfo = await GoogleNLP.analyzeSentiment4((googlePayload).tweet.text);
 				res.status(200).json({
-					twitter_info: googlePayload,
-					sentiment_info: sentimentInfo
+					twitter: googlePayload,
+					google: sentimentInfo
 				});
+				
 			} catch (error) {
 				return next(error);
 			}
