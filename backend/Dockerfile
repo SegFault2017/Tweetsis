@@ -6,9 +6,10 @@ LABEL maintainer = ["ray.tangent42@gmail.com"]
 
 WORKDIR /app
 
-COPY ["package.json", "package-lock.json", "./"]
+COPY package*.json ./
 RUN ls
-RUN npm install --production
+RUN npm install 
+ENV GOOGLE_APPLICATION_CREDENTIALS ./tweet_nlp.json
 COPY . .
 
 EXPOSE 8080

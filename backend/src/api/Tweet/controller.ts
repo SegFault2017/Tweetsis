@@ -16,7 +16,6 @@ class TwitterController{
 	
 
 	async getTweet(req: Request, res: Response, next: NextFunction): Promise<void>{
-		const result = {};
 		const tweetIdLength = req.params.id.length;
 		if (tweetIdLength != 19) {
 			res.status(400).json({
