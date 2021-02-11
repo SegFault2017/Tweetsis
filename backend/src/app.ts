@@ -22,9 +22,11 @@ class App{
   		methods: ["POST"]
   	}));
   	this.app.use(express.json());
-  	if (process.env.NODE_ENV !== "production") {
+  	if (process.env.NODE_ENV === "development") {
   		this.app.use(morgan("dev"));
-  	}
+	  } else if(process.env.NODE_ENV === "production"){
+		  this.app.use(express.static("frontend/build"));
+	  }
   }
 
   private routes(): void{

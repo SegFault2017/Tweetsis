@@ -27,7 +27,7 @@ class TwitterController{
 			try {
 				const googlePayload = await Twitter.retrieveContent(tweetId);
 				console.log("This is google payload!!!");
-				console.log(googlePayload);
+				// console.log(googlePayload);
 				const sentimentInfo = await GoogleNLP.analyzeSentiment4((googlePayload).tweet.text);
 				res.status(200).json({
 					twitter: googlePayload,

@@ -37,7 +37,7 @@ class TwitterAdapter {
                 const userActualName = twitterJson.includes.users[0].name;
                 const userProfileImgUrl = twitterJson.includes.users[0].profile_image_url;
                 
-                console.log(tweetID, tweetText);
+                // console.log(tweetID, tweetText);
                 return {
                     tweet: {
                         text: tweetText,
@@ -75,10 +75,10 @@ class TwitterAdapter {
         try {
             const responseFromTwitter = await this.axiosInstance.get(formattedTweet);
             console.log("Response from Twitter:\n");
-            console.log(responseFromTwitter.data);
+            // console.log(responseFromTwitter.data);
             const payload = await this.parse(responseFromTwitter);
             console.log("Response for Google NLP API:\n");
-            console.log(payload);
+            // console.log(payload);
             return payload;
         } catch (error) {
             throw new VError({

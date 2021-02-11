@@ -37,7 +37,6 @@ export const getSentimentData = (tweetUid) => async (dispatch) => {
     });
     dispatch({ type: SET_LOADING, payload: false });
   } catch (err) {
-    debugger;
     console.log(err);
     dispatch({ type: SET_LOADING, payload: false });
     window.alert("Something wrong with the twitter link");
