@@ -1,16 +1,18 @@
 ## Table of contents
-* [Tweetsis](#tweetsis)
-* [Preview](#preview)
-* [Figma](#figma)
-* [UML](#uml)
-* [Frameworks + Libraries](# Framework-+-Libraries)
-* [Setup](#setup)
+
+- [Tweetsis](#tweetsis)
+- [Preview](#preview)
+- [Figma](#figma)
+- [UML](#uml)
+- [Frameworks + Libraries](#Framework-+-Libraries)
+- [Setup](#setup)
 
 ## Tweetsis
-A SPA(single page application) where users could input a tweet link and ouput a sentiment analysis of the Tweet's contents.  The analysis is decomposed into 2 parts
+
+A SPA(single page application) where users could input a tweet link and ouput a sentiment analysis of the Tweet's contents. The analysis is decomposed into 2 parts
 
 1. The overall document and
-2.  	each individual sentence
+2. each individual sentence
 
 ## Preview
 
@@ -19,15 +21,15 @@ A SPA(single page application) where users could input a tweet link and ouput a 
 ## UML
 
 ## Frameworks + Libraries
+
 Project is created with:
-* NodeJs version: v14.15.4
-* Typescript : ^4.1.3,
-* React: ^ 17.0.1
-* Redux: ^4.0.5
-* Chart.js": ^2.9.4,
-* Tweetsis : v 1.0 
 
-
+- NodeJs version: v14.15.4
+- Typescript : ^4.1.3,
+- React: ^ 17.0.1
+- Redux: ^4.0.5
+- Chart.js": ^2.9.4,
+- Tweetsis : v 1.0
 
 ## Setup
 
@@ -52,4 +54,3 @@ $ cd ./frontend
 $ npm install
 $ npm start
 ```
-
