@@ -4,7 +4,7 @@
 - [Preview](#preview)
 - [Figma](#figma)
 - [UML](#uml)
-- [Frameworks + Libraries](#Frameworks_+_Libraries)
+- [General info](#general-info)
 - [Setup](#setup)
 
 ## Tweetsis
@@ -29,7 +29,7 @@ sdasdasdasdadasdadadasd
 
 ## UML
 
-## Frameworks + Libraries
+## General info
 
 Project is created with:
 
