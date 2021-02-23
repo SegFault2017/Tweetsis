@@ -4,7 +4,7 @@
 - [Preview](#preview)
 - [Figma](#figma)
 - [UML](#uml)
-- [Frameworks + Libraries](#Framework-+-Libraries)
+- [Frameworks + Libraries](#Frameworks_+_Libraries)
 - [Setup](#setup)
 
 ## Tweetsis
