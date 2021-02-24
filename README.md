@@ -22,7 +22,7 @@ A SPA(single page application) where users could input a tweet link and ouput a 
 
 ## Figma
 
-This [figma](https://www.figma.com/file/50TrKSMeIRGMlM3Wz9RYgG/Tweetsis?node-id=0%3A1 design shows the progress and protoptyping of the project.)
+This [figma](https://www.figma.com/file/50TrKSMeIRGMlM3Wz9RYgG/Tweetsis?node-id=0%3A1) design shows the different progress and protoptyping of the project.
 
 ## UML
 
