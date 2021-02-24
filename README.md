@@ -22,9 +22,11 @@ A SPA(single page application) where users could input a tweet link and ouput a 
 
 ## Figma
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F50TrKSMeIRGMlM3Wz9RYgG%2FTweetsis%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+This [figma]https://www.figma.com/file/50TrKSMeIRGMlM3Wz9RYgG/Tweetsis?node-id=0%3A1 design shows the progress and protoptyping of the project.
 
 ## UML
+
+![UML][demos/uml.png]
 
 ## Frameworks and Libraries
 
