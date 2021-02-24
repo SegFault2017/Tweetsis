@@ -26,7 +26,7 @@ This [figma]https://www.figma.com/file/50TrKSMeIRGMlM3Wz9RYgG/Tweetsis?node-id=0
 
 ## UML
 
-![UML][demos/uml.png]
+![UML](demos/uml.png)
 
 ## Frameworks and Libraries
 
