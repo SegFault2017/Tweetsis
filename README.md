@@ -22,7 +22,7 @@ A SPA(single page application) where users could input a tweet link and ouput a 
 
 ## Figma
 
-This [figma](https://www.figma.com/file/50TrKSMeIRGMlM3Wz9RYgG/Tweetsis?node-id=0%3A1) design shows the different progress and protoptyping of the project.
+This [figma](https://www.figma.com/file/50TrKSMeIRGMlM3Wz9RYgG/Tweetsis?node-id=0%3A1) design shows the different progresses and protoptypings of the project.
 
 ## UML
 
@@ -38,7 +38,7 @@ Project is created with:
 - Typescript : ^4.1.3,
 - React: ^ 17.0.1
 - Redux: ^4.0.5
-- Chart.js": ^2.9.4,
+- Chart.js : ^2.9.4,
 - Tweetsis : v 1.0
 
 ## Setup
