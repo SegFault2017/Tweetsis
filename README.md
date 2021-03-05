@@ -9,7 +9,7 @@
 
 ## Tweetsis
 
-A SPA(single page application) where users could input a tweet link and ouput a sentiment analysis of the Tweet's contents. The analysis is decomposed into 2 parts
+A SPA(single page application) where users could input a tweet link and ouput a sentiment analysis of the Tweet's content. The analysis is decomposed into 2 parts
 
 1. The overall document and
 2. each individual sentence
@@ -28,7 +28,7 @@ This [figma](https://www.figma.com/file/50TrKSMeIRGMlM3Wz9RYgG/Tweetsis?node-id=
 
 ![UML](demos/UML.png)
 
-As the UML shows, the backend will retrieve data from the Twitter V2 API given the tweet url from the frontend, and it will send the tweet's contents to the Google NLP API, and will composite the response for easy frontend consumption. To acheive this, I started with express.js with one endpoint that consumes the tweet ID, a preprocessed ID from the url, as a parameter. The backend will request data about the tweet content and user information from the Twitter V2 API when the client enters a valid url, and will send the content to Google NLP API for sentiment analysis. After the pending of the asynchronous function is successed, then the data is well-formatted and send it to React components.
+As the UML shows, the backend will retrieve data from the Twitter V2 API given the tweet url from the frontend, and it will send the tweet's content to the Google NLP API, and will composite the response for easy frontend consumption. To acheive this, I started with express.js with one endpoint that consumes the tweet ID, a preprocessed ID from the url, as a parameter. The backend will request data about the tweet content and user information from the Twitter V2 API when the client enters a valid url, and will send the content to Google NLP API for sentiment analysis. After the pending of the asynchronous function is successed, then the data is well-formatted and send it to React components.
 
 ## Frameworks and Libraries
 
