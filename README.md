@@ -9,7 +9,7 @@
 
 ## Tweetsis
 
-A SPA(single page application) where users could input a tweet link and ouput a sentiment analysis of the Tweet's content. The analysis is decomposed into 2 parts
+A SPA(single page application) where users could input a tweet link and ouput a sentiment analysis of the Tweet's content. The analysis is decomposed into 2 parts:
 
 1. The overall document and
 2. each individual sentence
